@@ -1,0 +1,148 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: "DMSans";
+  src: url("/fonts/DMSans-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("/fonts/DMSans-Medium.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("/fonts/DMSans-Bold.woff") format("woff");
+  font-weight: 700;
+}
+
+
+@font-face {
+  font-family: "SequelSans";
+  src: url("/fonts/SequelSans-Roman.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SequelSans";
+  src: url("/fonts/SequelSans-Bold.woff") format("woff");
+  font-weight: 700;
+}
+
+
+@font-face {
+  font-family: "Darkline";
+  src: url("/fonts/Darkline.woff") format("woff");
+  font-weight: normal;
+}
+
+
+@layer utilities {
+  /* DMSans */
+  .font-dmsans {
+    font-family: "DMSans", sans-serif;
+  }
+  .font-dmsans-regular {
+    font-family: "DMSans", sans-serif;
+    font-weight: 400;
+  }
+  .font-dmsans-medium {
+    font-family: "DMSans", sans-serif;
+    font-weight: 500;
+  }
+  .font-dmsans-bold {
+    font-family: "DMSans", sans-serif;
+    font-weight: 700;
+  }
+
+  /* SequelSans */
+  .font-sequel {
+    font-family: "SequelSans", sans-serif;
+  }
+  .font-sequel-regular {
+    font-family: "SequelSans", sans-serif;
+    font-weight: 400;
+  }
+  .font-sequel-bold {
+    font-family: "SequelSans", sans-serif;
+    font-weight: 700;
+  }
+
+  /* Darkline */
+  .font-darkline {
+    font-family: "Darkline", cursive;
+  }
+  .font-darkline-regular {
+    font-family: "Darkline", cursive;
+    font-weight: 400;
+  }
+}
+
+
+
+
+
+
+
+@layer base {
+  :root {
+    --color-gray: #B8C2CE; 
+    --color-dark: #262626; 
+    --color-white: #F9FAFC; 
+    --color-light-blue: #E1E8F0;
+    --color-light-gray: #EBEEF3;
+  }
+}
+@layer utilities {
+  .bg-g {
+    background-color: var(--color-gray);
+  }
+
+  .white {
+    color: var(--color-white);
+  }
+
+  .bg-bl {
+    background-color: var(--color-dark);
+  }
+
+  .text-bl {
+    color: var(--color-dark);
+  }
+  
+  .gradient-text {
+    background: linear-gradient(to bottom, #262525, #B8C2CE);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .light-blue {
+    background-color: var(--color-light-blue);
+  }
+
+  .text-gr {
+    color: var(--color-gray);
+  }
+  .tracking-9 {
+    letter-spacing: 9%;
+  }
+
+  .light-gray {
+    background-color: var(--color-light-gray);
+  }
+  
+  .light-gray-text {
+    color: var(--color-light-gray);
+  }
+
+  .border-gr {
+    border: var(--color-gray);
+  }
+
+  .border-b-gr {
+    border-bottom:var(--color-gray) ;
+  }
+}
