@@ -17,7 +17,7 @@ function App() {
       <Header />
       <div className="bg-gray-50 ">
         <Hero />
-        <div className="mt-50">
+        <div className="mt-[30px] sm:mt-[40px] lg:mt-[250px]">
           <Categoty/>
         </div>
         <Trending />
